@@ -11,26 +11,22 @@
   <code>
   function addClass(elm,newclass) {
     var c = elm.className;
-    elm.calssName = (c==='') ? newclass : c+' '+newclass;
+    elm.className = (c==='') ? newclass : c+' '+newclass;
   };
   </code>
   <p id="addmenewclass" class="class">addmenewclass</p>
   <script type="text/javascript">
   function addClass(elm, newclass) {
     var c = elm.className;
-    console.log(c)
+    console.log(c);
+    console.log( elm.className =(c==='') ) // cons provoque erreur inser false dans p.'false' qd placé devant tri
     elm.className = (c === '') ? newclass : c + ' ' + newclass;
-    console.log( elm.calssName =(c==='') )
   };
   // document.getElementById('addmenewclass').addClass('this','newclass')
   var test = document.getElementById('addmenewclass')
-  addClass(test, 'pasclass')
-    // document.getElementById('addmenewclass').addClass('this','newclass')
-    // debug
-    /**    
-      var p = document.getElementsByTagName('p')
-      p[0].className;
-      */
+  // addClass(test, 'pasclass')
+    addClass(document.getElementById('addmenewclass'),'pasclass')
+    
   </script>
 </body>
 
