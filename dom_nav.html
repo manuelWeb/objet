@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>add_class</title>
+</head>
+
+<body>
+  <h1>original function</h1>
+  <code>
+  function addClass(elm,newclass) {
+    var c = elm.className;
+    elm.calssName = (c==='') ? newclass : c+' '+newclass;
+  };
+  </code>
+  <p id="addmenewclass" class="class">addmenewclass</p>
+  <script type="text/javascript">
+  function addClass(elm, newclass) {
+    var c = elm.className;
+    console.log(c)
+    elm.className = (c === '') ? newclass : c + ' ' + newclass;
+    console.log( elm.calssName =(c==='') )
+  };
+  // document.getElementById('addmenewclass').addClass('this','newclass')
+  var test = document.getElementById('addmenewclass')
+  addClass(test, 'pasclass')
+    // document.getElementById('addmenewclass').addClass('this','newclass')
+    // debug
+    /**    
+      var p = document.getElementsByTagName('p')
+      p[0].className;
+      */
+  </script>
+</body>
+
+</html>
