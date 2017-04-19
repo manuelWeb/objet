@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>get element by string</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>test_1</td>
+    </tr>
+    <tr>
+      <td>getEltByTxt('test_5','td')</td>
+    </tr>
+    <tr>
+      <td>test_2</td>
+    </tr>
+    <tr>
+      <td>test_3</td>
+    </tr>
+    <tr>
+      <td>test_4</td>
+    </tr>
+    <tr>
+      <td>test_5</td>
+    </tr>
+    <tr>
+      <td>test_6</td>
+    </tr>
+    <tr>
+      <td>test_7</td>
+    </tr>
+    <tr>
+      <td>test_8</td>
+    </tr>
+    <tr>
+      <td>test_9</td>
+    </tr>
+    <tr>
+      <td>test_10</td>
+    </tr>
+  </table>
+  <script type="text/javascript">
+    function getEltByTxt(matchStr,tag) {
+      var tagsel = document.getElementsByTagName(tag) 
+      var i ;
+      // console.log(tagsel)
+      for (i = 0; i < tagsel.length; i++) {
+        if (tagsel[i].innerHTML.indexOf(matchStr) >= 0) {
+          // return tagsel[i].innerHTML;
+          return tagsel[i];
+          // return tagsel[i].parentElement;
+        }
+      }
+      return null;
+    }
+  </script>
+  <script type="text/javascript">console.info(getEltByTxt('test_5','td'))</script>
+</body>
+</html>
