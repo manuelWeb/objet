@@ -1,0 +1,6 @@
+[submodule "closure"]
+	path = closure
+	url = ./closure
+[submodule "checkMotif"]
+	path = checkMotif
+	url = ./checkMotif
