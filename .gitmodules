@@ -1,8 +1,0 @@
-[submodule "closure"]
-	path = closure
-	# url = ./closure
-	url = https://github.com/manuelWeb/closure.git
-[submodule "checkMotif"]
-	path = checkMotif
-	# url = ./checkMotif
-	url = https://github.com/manuelWeb/checkMotif.git
