@@ -1,0 +1,58 @@
+asciify-image
+ascii-images
+babel-preset-es2015
+bower
+browserify
+browser-sync
+cheerio
+coffee-script
+concat-cli
+core-util-is
+dploy
+emailify
+eslint
+events
+favicons
+fs
+gifify
+giflossy
+gifsicle
+gulp
+image-to-ascii-cli
+javascripting
+listNpmInNodeNodeMod.txt
+minifier
+node-gyp
+npm
+path
+prompt
+request
+rimraf (i -g)
+stylus
+svgo
+util
+w3cjs
+watch
+watchify
+
+// 17/05/17
+// npm global path = C:\Users\mdevries\AppData\Roaming\npm
+// npm list -g --depth=0
++-- browser-sync@2.18.2
++-- graceful-fs@4.1.11
++-- gulp@3.9.1
++-- imgcat@2.3.0
++-- js-beautify@1.6.4
++-- jshint@2.8.0
++-- markdown@0.5.0
++-- markdown-styles@3.1.9
++-- markdown-to-html@0.0.13
++-- marky-markdown@9.0.3
++-- md2html@0.0.1
++-- node-sass@4.1.1
++-- npm@4.0.3
++-- npm-windows-upgrade@0.4.5
++-- prettier@0.22.0
++-- rimraf@2.6.1
++-- watch@1.0.1
+`-- wring@1.0.0
