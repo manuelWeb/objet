@@ -4,3 +4,6 @@
 [submodule "checkMotif"]
 	path = checkMotif
 	url = ./checkMotif
+[submodule "objet"]
+	path = objet
+	url = ./objet
